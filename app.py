@@ -81,11 +81,10 @@ frame_height = st.slider('Frame Height', 240, 960, 480, 10)
 # Stream the video using WebRTC
 webrtc_streamer(
     key="human_emotion_detection",
-    mode=WebRtcMode.SENDRECV,
     video_frame_callback=callback,
     rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},
-    media_stream_constraints={"video": True, "audio": False},
-    async_processing=True,
+    media_stream_constraints={"video": True, "audio": False}
+
 )
 
 
