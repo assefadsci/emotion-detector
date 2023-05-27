@@ -35,7 +35,7 @@ st.title('Human Emotion Detector')
 
 
 # Define a callback function to process each frame
-def callback(frame: av.VideoFrame) -> av.VideoFrame:
+def callback(frame):
 
     # Resize the frame to the desired width and height
     resized_frame = cv2.resize(frame.to_ndarray(format="bgr24"), (frame_width, frame_height))
