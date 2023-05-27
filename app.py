@@ -14,7 +14,7 @@ conf_threshold = 0.3
 
 # Set initial values for the frame width and height
 frame_width = 640
-frame_height = 480
+frame_height = 640
 
 # Set up the Streamlit application
 st.set_page_config(
